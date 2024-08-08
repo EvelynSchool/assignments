@@ -6,11 +6,11 @@ let guess = 0;
 while (guess!=randomNumber){
 guess = Number(prompt("guess a number between 1 - 20: "));
 if(guess==randomNumber){
-    console.log("You won! You took ", numGuesses, "guesses.");
-} else if (guess > randomNumber) {
-    console.log("You guessed too high.");
+    console.log("You won!" + randomNumber + " You took ", numGuesses, "guesses.");
 } else if (guess < randomNumber){
     console.log("You guess too low.")
+}else if (guess > randomNumber) {
+    console.log("You guessed too high.");
 }
 numGuesses++;
 }
